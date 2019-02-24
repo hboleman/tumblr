@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PhotosViewControler.swift
 //  tumblr
 //
 //  Created by Hunter Boleman on 2/24/19.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PhotosViewControler: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
-
 }
-

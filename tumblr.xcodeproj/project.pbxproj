@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		5A4311762223640D0039AD40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4311752223640D0039AD40 /* AppDelegate.swift */; };
-		5A4311782223640D0039AD40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4311772223640D0039AD40 /* ViewController.swift */; };
 		5A43117B2223640D0039AD40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4311792223640D0039AD40 /* Main.storyboard */; };
 		5A43117D2223640F0039AD40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A43117C2223640F0039AD40 /* Assets.xcassets */; };
 		5A4311802223640F0039AD40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A43117E2223640F0039AD40 /* LaunchScreen.storyboard */; };
 		5A43118B2223640F0039AD40 /* tumblrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43118A2223640F0039AD40 /* tumblrTests.swift */; };
 		5A4311962223640F0039AD40 /* tumblrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4311952223640F0039AD40 /* tumblrUITests.swift */; };
+		5A4311A4222364670039AD40 /* PhotosViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4311A3222364670039AD40 /* PhotosViewControler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		5A4311722223640D0039AD40 /* tumblr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tumblr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A4311752223640D0039AD40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5A4311772223640D0039AD40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A43117A2223640D0039AD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A43117C2223640F0039AD40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A43117F2223640F0039AD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		5A4311912223640F0039AD40 /* tumblrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tumblrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A4311952223640F0039AD40 /* tumblrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tumblrUITests.swift; sourceTree = "<group>"; };
 		5A4311972223640F0039AD40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A4311A3222364670039AD40 /* PhotosViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewControler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 		5A4311742223640D0039AD40 /* tumblr */ = {
 			isa = PBXGroup;
 			children = (
+				5A4311A3222364670039AD40 /* PhotosViewControler.swift */,
 				5A4311752223640D0039AD40 /* AppDelegate.swift */,
-				5A4311772223640D0039AD40 /* ViewController.swift */,
 				5A4311792223640D0039AD40 /* Main.storyboard */,
 				5A43117C2223640F0039AD40 /* Assets.xcassets */,
 				5A43117E2223640F0039AD40 /* LaunchScreen.storyboard */,
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A4311782223640D0039AD40 /* ViewController.swift in Sources */,
+				5A4311A4222364670039AD40 /* PhotosViewControler.swift in Sources */,
 				5A4311762223640D0039AD40 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
