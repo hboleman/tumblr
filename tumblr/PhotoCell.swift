@@ -10,6 +10,9 @@ import UIKit
 
 class PhotoCell: UITableViewCell {
 
+    // Image View Outlet
+    @IBOutlet weak var out_imageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,11 +25,12 @@ class PhotoCell: UITableViewCell {
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "YourCustomCell") as! YourCustomCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell") as! PhotoCell
         
         // Configure YourCustomCell using the outlets that you've defined.
         
         return cell
     }
+    
     
 }
