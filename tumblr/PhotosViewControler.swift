@@ -6,6 +6,7 @@
 //  Copyright © 2019 Hunter Boleman. All rights reserved.
 //
 
+import AlamofireImage
 import UIKit
 
 class PhotosViewControler: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -70,6 +71,8 @@ class PhotosViewControler: UIViewController, UITableViewDataSource, UITableViewD
             let urlString = originalSize["url"] as! String
             // 4.
             let url = URL(string: urlString)
+            
+            cell.out_imageView.af_setImage(withURL: url!)
         }
         
         return cell
