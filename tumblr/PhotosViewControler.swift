@@ -58,6 +58,20 @@ class PhotosViewControler: UIViewController, UITableViewDataSource, UITableViewD
         // Pull single post
         let post = posts[indexPath.row]
         
+        // 1.            // 2.          // 3.
+        if let photos = post["photos"] as? [[String: Any]] {
+            // photos is NOT nil, we can use it!
+            // TODO: Get the photo url
+            // 1.
+            let photo = photos[0]
+            // 2.
+            let originalSize = photo["original_size"] as! [String: Any]
+            // 3.
+            let urlString = originalSize["url"] as! String
+            // 4.
+            let url = URL(string: urlString)
+        }
+        
         return cell
     }
 }
