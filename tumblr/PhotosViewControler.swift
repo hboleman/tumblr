@@ -41,6 +41,7 @@ class PhotosViewControler: UIViewController, UITableViewDataSource, UITableViewD
                 self.posts = responseDictionary["posts"] as! [[String: Any]];
                 
                 // TODO: Reload the table view
+                self.out_table_view.reloadData()
             }
         }
         task.resume()
@@ -51,10 +52,19 @@ class PhotosViewControler: UIViewController, UITableViewDataSource, UITableViewD
         return posts.count;
     }
     
+    /*
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.textLabel?.text = "This is row \(indexPath.row)"
+        
+        return cell
+    }
+ */
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //let cell = UITableViewCell()
         let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath) as! PhotoCell
-        cell.textLabel?.text = "This is row \(indexPath.row)"
+        //cell.textLabel?.text = "This is row \(indexPath.row)"
         
         // Pull single post
         let post = posts[indexPath.row]
@@ -77,4 +87,5 @@ class PhotosViewControler: UIViewController, UITableViewDataSource, UITableViewD
         
         return cell
     }
+ 
 }
