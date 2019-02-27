@@ -55,6 +55,9 @@ class PhotosViewControler: UIViewController, UITableViewDataSource, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath) as! PhotoCell
         cell.textLabel?.text = "This is row \(indexPath.row)"
         
+        // Pull single post
+        let post = posts[indexPath.row]
+        
         return cell
     }
 }
