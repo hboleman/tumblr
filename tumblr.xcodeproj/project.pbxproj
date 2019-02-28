@@ -52,7 +52,6 @@
 		5A4311972223640F0039AD40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A4311A3222364670039AD40 /* PhotosViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewControler.swift; sourceTree = "<group>"; };
 		5A4311AD2225F10D0039AD40 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
-		5AA0276B22275EA800097ADD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "/Users/hunter/Documents/XCode/AAA Code Path XCode/tumblr/tumblr/README.md"; sourceTree = "<absolute>"; };
 		8031A8BD380E22B718F8C42A /* Pods-tumblr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tumblr.debug.xcconfig"; path = "Target Support Files/Pods-tumblr/Pods-tumblr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +114,6 @@
 		5A4311742223640D0039AD40 /* tumblr */ = {
 			isa = PBXGroup;
 			children = (
-				5AA0276B22275EA800097ADD /* README.md */,
 				5A4311A3222364670039AD40 /* PhotosViewControler.swift */,
 				5A4311AD2225F10D0039AD40 /* PhotoCell.swift */,
 				5A4311752223640D0039AD40 /* AppDelegate.swift */,

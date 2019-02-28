@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/hunter/Documents/XCode/AAA Code Path XCode/tumblr/tumblr/README.md">
-   </FileRef>
-   <FileRef
       location = "group:tumblr.xcodeproj">
    </FileRef>
    <FileRef
