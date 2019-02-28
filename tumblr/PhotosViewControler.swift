@@ -75,7 +75,6 @@ class PhotosViewControler: UIViewController, UITableViewDataSource, UITableViewD
             
             cell.out_imageView.af_setImage(withURL: url!)
         }
-        
         return cell
     }
  
