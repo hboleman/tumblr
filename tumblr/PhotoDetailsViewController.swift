@@ -17,11 +17,7 @@ class PhotoDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-            
-           // cell.out_imageView.af_setImage(withURL: url!)
+        imageView.af_setImage(withURL: url!);
     }
     
 
