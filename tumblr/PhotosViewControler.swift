@@ -10,13 +10,12 @@ import AlamofireImage
 import UIKit
 
 class PhotosViewControler: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
     // Empty Array
     var posts: [[String: Any]] = [];
     
     // Table View Outlet
     @IBOutlet weak var out_table_view: UITableView!
-    @IBOutlet weak var imageView: UIImageView!
     
     
     override func viewDidLoad() {
@@ -48,16 +47,14 @@ class PhotosViewControler: UIViewController, UITableViewDataSource, UITableViewD
         }
         task.resume()
     }
-
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //let cell = UITableViewCell()
         let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath) as! PhotoCell
-        //cell.textLabel?.text = "This is row \(indexPath.row)"
         
         // Pull single post
         let post = posts[indexPath.row]
@@ -100,11 +97,30 @@ class PhotosViewControler: UIViewController, UITableViewDataSource, UITableViewD
         //Get the indexPath of the selected photo
         let indexPath = out_table_view.indexPath(for: cell)!
         
-        // Transfer image to other class
-        vc.imageView.image = self.imageView.image;
+        // Pull single post
+        let post = posts[indexPath.row]
         
-        out_table_view.deselectRow(at: indexPath, animated: true)
+        // 1.            // 2.          // 3.
+        if let photos = post["photos"] as? [[String: Any]] {
+            // photos is NOT nil, we can use it!
+            // TODO: Get the photo url
+            // 1.
+            let photo = photos[0]
+            // 2.
+            let originalSize = photo["original_size"] as! [String: Any]
+            // 3.
+            let urlString = originalSize["url"] as! String
+            // 4.
+            let url_a = URL(string: urlString)
+            
+            vc.url = url_a;
+            
+            // Transfer image to other class
+            //var img: UIImage? = cell.imageView?.image
+            //vc.imageView.image
+            
+            out_table_view.deselectRow(at: indexPath, animated: true)
+        }
     }
     
- 
 }

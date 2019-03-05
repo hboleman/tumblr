@@ -8,18 +8,20 @@
 
 import UIKit
 
-public var url = URL(string: "")!
-
 class PhotoDetailsViewController: UIViewController {
-
+    
     // Outlets
     @IBOutlet weak var imageView: UIImageView!
     
+    public var url: URL?;
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
+        
+            
+           // cell.out_imageView.af_setImage(withURL: url!)
     }
     
 

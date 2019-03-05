@@ -38,7 +38,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="out_imageView" destination="916-Rn-xef" id="7I9-9q-uA2"/>
+                                            <outlet property="out_imageView" destination="916-Rn-xef" id="3XS-4I-hQd"/>
                                             <segue destination="Poi-bh-Qqu" kind="show" id="uPT-jV-xta"/>
                                         </connections>
                                     </tableViewCell>
@@ -50,8 +50,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="YdT-5l-R0d"/>
                     <connections>
-                        <outlet property="imageView" destination="916-Rn-xef" id="Zeu-vh-mQM"/>
-                        <outlet property="out_table_view" destination="Bqj-Tg-wKy" id="QLu-kU-QGV"/>
+                        <outlet property="out_table_view" destination="Bqj-Tg-wKy" id="BFz-K7-h3U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
