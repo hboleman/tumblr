@@ -14,6 +14,7 @@ class PhotosViewControler: UIViewController, UITableViewDataSource, UITableViewD
     // Empty Array
     var posts: [[String: Any]] = [];
     
+    
     // Table View Outlet
     @IBOutlet weak var out_table_view: UITableView!
     
