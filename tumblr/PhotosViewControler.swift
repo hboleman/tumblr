@@ -16,6 +16,8 @@ class PhotosViewControler: UIViewController, UITableViewDataSource, UITableViewD
     
     // Table View Outlet
     @IBOutlet weak var out_table_view: UITableView!
+    @IBOutlet weak var imageView: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,5 +79,32 @@ class PhotosViewControler: UIViewController, UITableViewDataSource, UITableViewD
         }
         return cell
     }
+    
+    private func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) -> Int {
+        return indexPath.row;
+    }
+    
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        
+        //Get a reference to the PhotoDetailsViewController
+        let vc = segue.destination as! PhotoDetailsViewController
+        
+        //Get the cell that triggered the segue
+        let cell = sender as! UITableViewCell
+        //Get the indexPath of the selected photo
+        let indexPath = out_table_view.indexPath(for: cell)!
+        
+        // Transfer image to other class
+        vc.imageView.image = self.imageView.image;
+        
+        out_table_view.deselectRow(at: indexPath, animated: true)
+    }
+    
  
 }

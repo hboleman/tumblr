@@ -39,6 +39,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="out_imageView" destination="916-Rn-xef" id="7I9-9q-uA2"/>
+                                            <segue destination="Poi-bh-Qqu" kind="show" id="uPT-jV-xta"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -49,6 +50,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="YdT-5l-R0d"/>
                     <connections>
+                        <outlet property="imageView" destination="916-Rn-xef" id="Zeu-vh-mQM"/>
                         <outlet property="out_table_view" destination="Bqj-Tg-wKy" id="QLu-kU-QGV"/>
                     </connections>
                 </viewController>
@@ -56,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="133.92857142857142"/>
         </scene>
-        <!--Photos View Controler-->
+        <!--Photo Details View Controller-->
         <scene sceneID="1EV-Ac-jFg">
             <objects>
-                <viewController id="Poi-bh-Qqu" customClass="PhotosViewControler" customModule="tumblr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Poi-bh-Qqu" customClass="PhotoDetailsViewController" customModule="tumblr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hUB-BF-NQG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,6 +74,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="jXK-tL-WeZ"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="ULi-KU-Poy" id="Zsp-oe-8ua"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZDr-8e-fFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

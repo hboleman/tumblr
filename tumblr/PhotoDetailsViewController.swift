@@ -12,6 +12,10 @@ public var url = URL(string: "")!
 
 class PhotoDetailsViewController: UIViewController {
 
+    // Outlets
+    @IBOutlet weak var imageView: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
