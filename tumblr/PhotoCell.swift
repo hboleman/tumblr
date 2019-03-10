@@ -11,6 +11,7 @@ import UIKit
 
 class PhotoCell: UITableViewCell {
 
+    
     // Image View Outlet
     @IBOutlet weak var out_imageView: UIImageView!
     
